@@ -1,19 +1,13 @@
 public class Kendaraan {
     String nama, merek;
     int cc;
-    
-    Kendaraan(String nm, String mr, int cc){
-        this.nama = nm;
-        this.merek = mr;
-        this.cc = cc;
-    }
 
-    void getInfo() {
-        System.out.println(this.merek + " ["+ this.nama + "] " + this.cc);
-    }
-
-    int biaya(int liter, int harga){
-        return liter * harga;
+    //1. namanya harus sama dengan kelas tanpa void
+    //2. fungsinya menjalankan kode sebelum method lain berfungsi
+    Kendaraan(String n, String m, int c){
+        this.nama = n;
+        this.merek = m;
+        this.cc = c;
     }
 
     public String getNama() {
@@ -28,5 +22,15 @@ public class Kendaraan {
         return cc;
     }
 
-    
+
+
+    //method
+    void getInfo() {
+        System.out.println(this.merek + " ["+ this.nama + "] " + this.cc);
+    }
+
+    //method dengan parameter
+    int biaya(int liter, int harga){
+        return liter * harga;
+    }   
 }
